@@ -232,7 +232,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">385,345</av:Point>
                   <av:Size x:Key="ShapeSize">200,54</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">485,399 485,429 440,429 440,465</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">485,399 485,465</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="a3fbfc34-c373-4ea9-bdf7-eacc8e5a40de" Version="V2">
@@ -272,11 +272,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">385,465</av:Point>
-                      <av:Size x:Key="ShapeSize">110,70</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">440,535 440,585</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,54</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">485,519 485,585</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign - Type to handle" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Assign_7">
+                  <Assign DisplayName="Assign - Type to handle" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Assign_7">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[TypeAssets]</OutArgument>
                     </Assign.To>
@@ -289,11 +289,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">385,585</av:Point>
-                          <av:Size x:Key="ShapeSize">110,70</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">440,655 440,705</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,54</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">485,639 485,705</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Assign - Type to handle to Array" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign DisplayName="Assign - Type to handle to Array" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Assign_8">
                         <Assign.To>
                           <OutArgument x:TypeArguments="s:String[]">[TypeAssetsArray]</OutArgument>
                         </Assign.To>
@@ -306,10 +306,10 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">385,705</av:Point>
-                              <av:Size x:Key="ShapeSize">110,70</av:Size>
+                              <av:Size x:Key="ShapeSize">200,54</av:Size>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Filter Data Table LINQ" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign DisplayName="Filter Data Table LINQ" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="Assign_9">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataTable">[io_dt_dataForBulkAddQueueITems]</OutArgument>
                             </Assign.To>
