@@ -150,6 +150,12 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <StateMachine InitialState="{x:Reference __ReferenceID20}" DisplayName="Main" sap:VirtualizedContainerService.HintSize="1162,637.3333333333334" sap2010:WorkflowViewState.IdRef="StateMachine_1">
@@ -162,7 +168,7 @@
         <av:PointCollection x:Key="ConnectorLocation">80,47.7866666666667 336,47.7866666666667 336,56.8</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID20" sap2010:Annotation.AnnotationText="Common actions in the beginning of every job + custom actions" DisplayName="State_BeginningActions" sap:VirtualizedContainerService.HintSize="676.6666666666666,3846.6666666666665" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID20" sap2010:Annotation.AnnotationText="Common actions in the beginning of every job + custom actions" DisplayName="State_BeginningActions" sap:VirtualizedContainerService.HintSize="219.33333333333334,64.66666666666667" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <TryCatch DisplayName="Try_BeginningActions" sap:VirtualizedContainerService.HintSize="630,3417.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_4">
           <sap:WorkflowViewStateService.ViewState>
@@ -346,9 +352,9 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID0" DisplayName="State_End Process" sap:VirtualizedContainerService.HintSize="137.33333333333334,132" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
+            <State x:Name="__ReferenceID0" DisplayName="State_End Process" sap:VirtualizedContainerService.HintSize="448.6666666666667,668.6666666666666" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
               <State.Entry>
-                <If Condition="[out_list_JobBusinessExceptions.Count=1 AndAlso out_list_JobSystemExceptions.Count=0]" DisplayName="If there is only one single business exception" sap:VirtualizedContainerService.HintSize="484,562" sap2010:WorkflowViewState.IdRef="If_11">
+                <If Condition="[out_list_JobBusinessExceptions.Count=1 AndAlso out_list_JobSystemExceptions.Count=0]" DisplayName="If there is only one single business exception" sap:VirtualizedContainerService.HintSize="402,552" sap2010:WorkflowViewState.IdRef="If_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -356,10 +362,10 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Throw DisplayName="Throw the only one business exception" Exception="[New BusinessRuleException(&quot;Exception.s:&quot;+Environment.NewLine+&quot;Business:&quot;+Environment.NewLine+&quot;#1: &quot;+out_list_JobBusinessExceptions(0).Message+Environment.NewLine+&quot;Data: &quot;+Newtonsoft.Json.JsonConvert.SerializeObject(out_list_JobBusinessExceptions(0).Data))]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Throw_5" />
+                    <Throw DisplayName="Throw the only one business exception" Exception="[New BusinessRuleException(&quot;Exception.s:&quot;+Environment.NewLine+&quot;Business:&quot;+Environment.NewLine+&quot;#1: &quot;+out_list_JobBusinessExceptions(0).Message+Environment.NewLine+&quot;Data: &quot;+Newtonsoft.Json.JsonConvert.SerializeObject(out_list_JobBusinessExceptions(0).Data))]" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="Throw_5" />
                   </If.Then>
                   <If.Else>
-                    <If Condition="[out_list_JobBusinessExceptions.Count&gt;0 OrElse out_list_JobSystemExceptions.Count&gt;0]" DisplayName="if there are exceptions" sap:VirtualizedContainerService.HintSize="450,355.3333333333333" sap2010:WorkflowViewState.IdRef="If_10">
+                    <If Condition="[out_list_JobBusinessExceptions.Count&gt;0 OrElse out_list_JobSystemExceptions.Count&gt;0]" DisplayName="if there are exceptions" sap:VirtualizedContainerService.HintSize="368,276" sap2010:WorkflowViewState.IdRef="If_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
