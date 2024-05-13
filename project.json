@@ -5,6 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "HmsTeam.Framework.Activities": "2024.1.6",
+    "UiPath.Mail.Activities": "1.22.2",
     "UiPath.System.Activities": "[22.4.5]",
     "UiPath.UIAutomation.Activities": "[23.10.7]"
   },
