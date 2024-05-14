@@ -357,10 +357,15 @@ Select row).CopyToDataTable()]</InArgument>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05_SendMail workflow" sap:VirtualizedContainerService.HintSize="334,115.33333333333331" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\SendMail.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InOutArgument x:TypeArguments="hm:ProcessSetup" x:Key="io_ProcessSetup" />
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_to">[str_email_to]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_subject">[str_email_subject]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_body">[str_email_body]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_to">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_to" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_subject">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_subject" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_body">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_body" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">

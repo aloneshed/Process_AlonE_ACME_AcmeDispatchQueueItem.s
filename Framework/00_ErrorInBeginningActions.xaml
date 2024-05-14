@@ -162,7 +162,6 @@
     </ui:MultipleAssign>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendMail workflow" sap:VirtualizedContainerService.HintSize="431.3333333333333,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\SendMail.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InOutArgument x:TypeArguments="hm:ProcessSetup" x:Key="io_ProcessSetup" />
         <InArgument x:TypeArguments="x:String" x:Key="in_str_email_to">
           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_to" />
         </InArgument>
