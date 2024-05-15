@@ -355,17 +355,11 @@ Select row).CopyToDataTable()]</InArgument>
           <av:PointCollection x:Key="ConnectorLocation">440,291 440,333</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05_SendMail workflow" sap:VirtualizedContainerService.HintSize="334,115.33333333333331" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\SendMail.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05_SendMail workflow" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\SendMail.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_to">
-            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_to" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_subject">
-            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_subject" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_body">
-            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_email_body" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_to">[str_email_to]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_subject">[str_email_subject]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_str_email_body">[str_email_body]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -385,7 +379,7 @@ Select row).CopyToDataTable()]</InArgument>
           <av:PointCollection x:Key="ConnectorLocation">440,187 440,237</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431.3333333333333,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -401,7 +395,7 @@ Select row).CopyToDataTable()]</InArgument>
                 <OutArgument x:TypeArguments="x:String">[str_email_subject]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">תחילת עבודה</InArgument>
+                <InArgument x:TypeArguments="x:String">["תחילת עבודה - הכנסת רשומות לתור"]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
